@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title >Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  {{ users.email }}
+  <form (ngSubmit)="registerUser()">
+    <ion-item>
+      <ion-label>Email id</ion-label>
+      <ion-input type="text" name="email" [(ngModel)]="users.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="users.password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Register</button>
+  </form>
+</ion-content>
